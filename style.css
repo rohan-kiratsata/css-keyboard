@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.keyboard-base {
+  max-width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #dfdfdf;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30px)[30];
+      grid-template-columns: repeat(30, 30px);
+  -ms-grid-rows: (60px)[5];
+      grid-template-rows: repeat(5, 60px);
+  grid-gap: 8px;
+}
+
+.key {
+  text-decoration: none;
+  border: none;
+  background: #2d2d2d;
+  -webkit-box-shadow: 2px 2px 2px #252525;
+          box-shadow: 2px 2px 2px #252525;
+  border-radius: 5px;
+  color: #fff;
+  grid-column: span 2;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.key:hover {
+  cursor: pointer;
+}
+
+.key:active {
+  -webkit-box-shadow: 2px 2px 2px black inset;
+          box-shadow: 2px 2px 2px black inset;
+}
+
+.key #lsh {
+  margin: 0 10px;
+}
+
+.back, .capslock, .ret {
+  grid-column: span 4;
+}
+
+.tab, .backslash, .lctrl, .dev {
+  grid-column: span 3;
+}
+
+.lshift, .rshift {
+  grid-column: span 5;
+}
+
+.space {
+  grid-column: span 13;
+}
+/*# sourceMappingURL=style.css.map */

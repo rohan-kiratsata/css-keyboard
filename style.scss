@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    user-select: none;
+}
+
+.keyboard-base{
+    max-width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(223, 223, 223);
+    display:grid;
+    grid-template-columns: repeat(30,30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 8px;
+}
+.key{
+
+    text-decoration: none;
+    border: none;
+    background: #2d2d2d;
+    box-shadow: 2px 2px 2px rgb(37, 37, 37);
+    border-radius: 5px;
+    color: #fff;
+    grid-column: span 2;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        box-shadow: 2px 2px 2px black inset;
+    }
+    #lsh{
+        margin: 0 10px;
+    }
+}
+.back, .capslock, .ret{
+    grid-column: span 4;
+}
+.tab , .backslash, .lctrl, .dev{
+    grid-column: span 3;
+
+}
+.lshift, .rshift{
+    grid-column: span 5;
+}
+.space{
+    grid-column: span 13;
+}
