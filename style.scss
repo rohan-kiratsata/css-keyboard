@@ -53,6 +53,10 @@ body{
     #lsh{
         margin: 0 10px;
     }
+    a{
+        text-decoration:none;
+        color:#fff;
+    }
 }
 .back, .capslock, .ret{
     grid-column: span 4;
@@ -66,4 +70,21 @@ body{
 }
 .space{
     grid-column: span 13;
+}
+.dev{
+    background: rgb(99, 162, 255);
+    box-shadow: 2px 2px 2px rgb(29, 104, 216);
+
+    &:active{
+        box-shadow: 2px 2px 2px rgb(25, 75, 150) inset;
+        box-shadow: inset;
+    }
+}
+.back{
+    background: rgb(245, 87, 87);
+    box-shadow: 2px 2px 2px rgb(82, 7, 7);
+
+    &:active{
+        box-shadow: 2px 2px 2px rgb(82, 7, 7) inset;
+    }
 }

@@ -74,6 +74,11 @@ body {
   margin: 0 10px;
 }
 
+.key a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .back, .capslock, .ret {
   grid-column: span 4;
 }
@@ -88,5 +93,29 @@ body {
 
 .space {
   grid-column: span 13;
+}
+
+.dev {
+  background: #63a2ff;
+  -webkit-box-shadow: 2px 2px 2px #1d68d8;
+          box-shadow: 2px 2px 2px #1d68d8;
+}
+
+.dev:active {
+  -webkit-box-shadow: 2px 2px 2px #194b96 inset;
+          box-shadow: 2px 2px 2px #194b96 inset;
+  -webkit-box-shadow: inset;
+          box-shadow: inset;
+}
+
+.back {
+  background: #f55757;
+  -webkit-box-shadow: 2px 2px 2px #520707;
+          box-shadow: 2px 2px 2px #520707;
+}
+
+.back:active {
+  -webkit-box-shadow: 2px 2px 2px #520707 inset;
+          box-shadow: 2px 2px 2px #520707 inset;
 }
 /*# sourceMappingURL=style.css.map */
