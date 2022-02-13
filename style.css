@@ -74,13 +74,12 @@ body {
   margin: 0 10px;
 }
 
-.key a {
-  text-decoration: none;
-  color: #fff;
+.capslock, .ret {
+  grid-column: span 4;
 }
 
-.back, .capslock, .ret {
-  grid-column: span 4;
+.on {
+  grid-column: span 3;
 }
 
 .tab, .backslash, .lctrl, .dev {
