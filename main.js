@@ -1,8 +1,5 @@
-let elem = document.querySelector('.key');
+var audioElem = new Audio('keyboard.mp3');
 
-
-function playS(){
-    var aud = new Audio('keyboard.mp3');
-    aud.play();
-}
-elem.onclick = playS();
+$(".key").click(function(){
+    audioElem.play();
+})
